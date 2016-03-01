@@ -22,5 +22,13 @@ module.exports = {
 			include: APP_DIR,
 			loader: 'babel'
 		}]
-	}
+	},
+
+	plugins: [
+		new webpack.DefinePlugin({
+		  "process.env": {
+		    NODE_ENV: JSON.stringify("production")
+		  }
+		})
+	]
 }
