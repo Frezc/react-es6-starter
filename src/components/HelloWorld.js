@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default class HelloWorld extends React.Component {
-
-	render() {
-		return (
-			<div>Hello World!</div>
-		);
-	}
+function HelloWorld(props) {
+	return (
+		<div>Hello World!</div>
+	);
 }
+
+export default HelloWorld;
